@@ -1,4 +1,11 @@
-<a href=# style="font-size=16px">hello word</a>
-<% if true %>
-123
+<h2>Read페이지</h2>
+<br>
+<% @posts.each do |post| %>
+  <span>제목:</span><%= post.title %>
+  <br>
+  <span>내용:</span><%= post.contents%>
+  <br>
 <% end %>
+<hr>
+<br>
+<a href='/write'>글쓰기 페이지 바로가기</a>
