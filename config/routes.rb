@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :studies
+  resources :data
   resources :reads
   resources :users
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -11,4 +13,7 @@ Rails.application.routes.draw do
   get '/write' => 'home#write'
   post '/create' => 'home#create'
   get '/show/:id' => 'home#show'
+  get '/modify/:post_id' => 'home#modify'
+  post '/update/:post_id' => 'home#update'
+  get '/delete/:post_id' => 'home#delete'
 end

@@ -2,8 +2,10 @@
 <br>
 <% @posts.each do |post| %>
   <span>제목:</span><%= post.title %>
+  <a href="/modify/<%=post.id%>">수정하기</a>
   <br>
   <span>내용:</span><%= post.contents%>
+  <a href="/delete/<%=post.id%>">삭제하기</a>
   <br>
 <% end %>
 <hr>
