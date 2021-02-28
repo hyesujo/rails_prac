@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  people: one
+  pack: one
+  quantitiy: 1
+
+two:
+  people: two
+  pack: two
+  quantitiy: 1
